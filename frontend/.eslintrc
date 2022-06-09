@@ -1,0 +1,28 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint",
+      "no-loops"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        "semi": ["warn", "always"],
+        "quotes": ["warn", "double", { "allowTemplateLiterals": true }],
+        "no-trailing-spaces": ["warn", { "ignoreComments": true }],
+        "key-spacing": ["warn", { "beforeColon": false, "afterColon": true }],
+        "comma-dangle": ["warn", "only-multiline"],
+        "arrow-spacing": ["warn", { "before": true, "after": true }],
+        "no-eval": 2,
+        "no-var": 2,
+        "default-case": 2,
+        "brace-style": 1,
+        "block-spacing": 1,
+        "no-invalid-this": 2,
+        "no-loops/no-loops": 2
+    }
+  }
